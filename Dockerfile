@@ -1,11 +1,11 @@
 # Ionic 2 developer container
 # Use at your own risk! I have not tested any deployment, created my own as all the others did not work!
-# alias ionic="docker run -ti --rm -p 8100:8100 -p 35729:35729 -v \$PWD:/myApp:rw bekkere/docker-ionic2:latest ionic"
+# alias ionic="docker run -ti --rm -p 8100:8100 -p 35729:35729 -v \$PWD:/myApp:rw guptasanchit90dev/docker-ionic2:latest ionic"
 # then use ionic serve on localhost:8100
 
 FROM ubuntu:16.04
 
-MAINTAINER bekkere <bekkere@gmail.com>
+MAINTAINER guptasanchit90dev <gupta.sanchit90@gmail.com>
 
 # Set one or more individual labels
 LABEL Description="Ionic 2 Framework Dev container"
@@ -20,7 +20,7 @@ LABEL Node_Version="7.x"
 LABEL TypeScript_Version="2.2.1"
 LABEL release-date="2017-03-23"
 LABEL is-production="False"
-LABEL HOST_ALIAS="alias ionic=docker run -ti --rm -p 8100:8100 -p 35729:35729 -v $PWD:/myApp:rw bekkere/docker-ionic2:latest ionic"
+LABEL HOST_ALIAS="alias ionic=docker run -ti --rm -p 8100:8100 -p 35729:35729 -v $PWD:/myApp:rw guptasanchit90dev/docker-ionic2:latest ionic"
 
 RUN apt-get update && apt-get install -y -q curl
 
