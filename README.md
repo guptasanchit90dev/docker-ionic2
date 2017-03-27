@@ -1,23 +1,18 @@
 # Docker-Ionic2
 
-  ![Logo](https://t3.ftcdn.net/jpg/00/88/29/92/160_F_88299226_zDCwpd0g45FKNMbJzuh7N1gXH45Xze2p.jpg)
-
-By [bekkere]
-
-## Description
-**Docker-Ionic2** Docker container for Ionic2 Framework
+Original source : https://github.com/bekkere/docker-ionic2
 
 ## Installation
 
 Pull the image:
 
 ```console
-docker pull bekkere/docker-ionic2
+docker pull guptasanchit90dev/docker-ionic2
 ```
 Create a alias for simple execution: 
 
 ```console
-alias ionic="docker run -ti --rm -p 8100:8100 -p 35729:35729 -v \$PWD:/myApp:rw bekkere/docker-ionic2:latest ionic"
+alias ionic="docker run -ti --rm -p 8100:8100 -p 35729:35729 -v \$PWD:/myApp:rw guptasanchit90dev/docker-ionic2:latest ionic"
 
 ```
 
